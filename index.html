@@ -65,6 +65,29 @@
       </div>
     </div>
 
-    <script></script>
+    <script>
+      const URL = "https://striveschool-api.herokuapp.com/api/product/";
+      const token =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTczNjhmN2ZlMDMxZTAwMTliYTFhZjkiLCJpYXQiOjE3MDIwNjIzMjcsImV4cCI6MTcwMzI3MTkyN30.EVQsdJk2CjupWU7y6wz1FU8Y2yfUvBBWF4CQMDzs5Vg";
+
+      const reqHeader = {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      };
+
+      let risp = null;
+      const getListItem = () => {
+        fetch(URl, reqHeader)
+          .then((risposta) => {
+            risp = risposta.json();
+          })
+
+          .catch((err) => {
+            console.log(err);
+          });
+      };
+    </script>
   </body>
 </html>

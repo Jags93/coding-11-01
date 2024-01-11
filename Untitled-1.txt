@@ -1,0 +1,10 @@
+1. ottenere la lista degli oggeeti
+2. info prodotto
+3. poter aggiungere un oggetto
+4. poter modificare un oggetto
+5. poter cancellare un oggetto
+
+6. - facciamo una richiesta http di tipo get al server per recuperare la lista degli oggetti
+   - aggiungiamo un caricamento per far vedere che sta caricando la pagina, mentre viene fatta la fetch
+   - i dati ricevuti gli dobbiamo convertire da json a js
+   - una volta ottenuto i dati in js, li devo mettere nel html e renderrizzarli a schermo
